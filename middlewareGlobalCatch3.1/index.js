@@ -5,16 +5,19 @@ app.get("/", (req, res) => {
   const password = req.headers.password;
   const kidney = req.query.kidney;
 
-  if (!(username === "harkirat" && password === "pass")) {
-      res.status(400).json({ msg: "wrong username password" });
+  // if (!(username === "harkirat" && password === "pass")) {
+  //     res.status(400).json({ msg: "wrong username password" });
 
-    return;
-  } else {
+  //   return;}
+  // dumb way of doing I/p validation .
+
+      {
     // console.log(typeof(kidney))
-    if (!(kidney == 1 && kidney == 2)) {
+    if ((kidney != 1 && kidney != 2)) {
       res.status(400).json({ msg: "kidney check" });
       return;
-    }res.json({"msg":"you can  access the data"})
+
+    }
   }
 });
 
