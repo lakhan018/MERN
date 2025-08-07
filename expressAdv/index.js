@@ -56,3 +56,18 @@ Here are key Express.js concepts for beginners:
     ```
 
 Learn these basics to start building web applications with Express.js.*/
+
+
+const express = require('express');
+const app = express(); 
+const port = 3000;
+// assuming you are a patient who is doing checkup to doctor but there are number of procedures like insurecs payment wagera wagera these are called middleware
+// prechecks --> authentication // input validation 
+// what is the best way to handle these prechecks?
+// ans --> middleware
+
+app.get('/', (req, res) => {
+  res.end('you heart is healthy');
+}).listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
