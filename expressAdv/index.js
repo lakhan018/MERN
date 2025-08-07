@@ -1,0 +1,58 @@
+/*
+const express = require('express');
+
+Here are key Express.js concepts for beginners:
+
+1. **What is Express.js?**
+    - A minimal and flexible Node.js web application framework.
+
+2. **Setting Up Express**
+    ```js
+    const app = express();
+    const port = 3000;
+
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
+    ```
+
+3. **Basic Routing**
+    ```js
+    app.get('/', (req, res) => {
+      res.send('Hello World!');
+    });
+    ```
+
+4. **Middleware**
+    - Functions that execute during the request-response cycle.
+    ```js
+    app.use(express.json());
+    ```
+
+5. **Serving Static Files**
+    ```js
+    app.use(express.static('public'));
+    ```
+
+6. **Handling POST Requests**
+    ```js
+    app.post('/data', (req, res) => {
+      res.json(req.body);
+    });
+    ```
+
+7. **Route Parameters**
+    ```js
+    app.get('/user/:id', (req, res) => {
+      res.send(`User ID: ${req.params.id}`);
+    });
+    ```
+
+8. **Error Handling**
+    ```js
+    app.use((err, req, res, next) => {
+      res.status(500).send('Something broke!');
+    });
+    ```
+
+Learn these basics to start building web applications with Express.js.*/
